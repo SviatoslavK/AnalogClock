@@ -1,0 +1,79 @@
+.container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.clock {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url(map.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: 10px solid #d9d4d2;
+    position: relative;
+}
+.center {
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border:9px solid red;
+    background-color: #fff;
+    z-index: 100;
+}
+.hand {
+    transform: rotate(90deg);   
+    transition: all .05s;
+    transition-timing-function: ease-in;
+}
+.sec-hand {
+    height: 2px;
+    width: 50%;
+    left: 18px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 10;
+    transform-origin: 91%;
+
+}
+.min-hand {
+    height: 14px;
+    position: absolute;
+    width: 42%;
+    left: 8%;
+    box-sizing: border-box;
+    border: 3px solid #eee;
+    top: 50%;
+    background-color: #000;
+    margin-top: -7px;
+    transform-origin: 100%;
+}
+.hour-hand {
+    height: 14px;
+    position: absolute;
+    width: 32%;
+    left: 18%;
+    box-sizing: border-box;
+    border: 3px solid #eee;
+    top: 50%;
+    background-color: #000;
+    margin-top: -7px;
+    transform-origin: 100%;
+}
